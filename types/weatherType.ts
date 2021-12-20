@@ -1,6 +1,6 @@
 import DogeIcons from "./dogeType";
 
-type IWeatherInfo = {
+interface IWeatherInfo {
     coord: {
         lon: number;
         lat: number;
