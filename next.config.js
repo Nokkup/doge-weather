@@ -1,3 +1,6 @@
 module.exports = {
-  reactStrictMode: true,
-}
+    reactStrictMode: true,
+    env: {
+        APP_ID: process.env.APP_ID,
+    },
+};

@@ -1,0 +1,36 @@
+.DogesList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    margin: 40px;
+
+    @media (max-width: 992px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 576px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.DogesList__card {
+    display: grid;
+    grid-template-rows: 90% 10%;
+
+    align-items: center;
+    justify-items: center;
+
+    padding: 10px;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    background-color: #fef5ed;
+    box-shadow: 2px 1px 27px -3px rgba(203, 81, 237, 0.26);
+
+    border-radius: 20px;
+
+}
