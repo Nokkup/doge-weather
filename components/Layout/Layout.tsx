@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import styles from "./Layout.module.scss";
 
@@ -9,7 +10,9 @@ interface LayoutProps {
 const Layout = (props: LayoutProps) => {
     return (
         <>
-            <title>{props.title}</title>
+            <Head>
+                <title>{props.title}</title>
+            </Head>
             <div className={styles.Layout}>{props.children}</div>
         </>
     );
